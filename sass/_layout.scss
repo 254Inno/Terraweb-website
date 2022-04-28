@@ -1,0 +1,217 @@
+.nav{
+    height: 8rem;
+    background-color: $color-white;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    &__logo{
+        height: 6rem;
+        
+    }
+    &__links{
+        list-style-type: none;
+        margin-left: auto;
+
+        display: flex;
+        gap: 1.2rem;
+        font-size: 2.8rem;
+        font-weight: $font-weight-bold;
+    }
+}
+.section-hero{
+    background-image: url('../IMG/hero.jpg');
+    background-position: top;
+    background-size: cover;
+    // filter: brightness(60%);
+    margin-bottom: 12rem;
+}
+.hero{
+    filter: brightness(100%);
+ 
+  width: 100%;
+  height: calc(100vh - 8rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__heading{
+      font-size: 8.2rem;
+      font-weight: $font-weight-bold;
+      color: $color-white;
+      font-family: $font-primary;
+
+      span{
+          background-color: $color-primary;
+          padding: 0 3rem;
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+      }
+
+  }
+  &__paragraph{
+font-family: $font-secondary;
+font-weight: $font-weight-medium;
+font-size: 4.2rem;
+color: $color-white;
+text-align: center;
+width: 55%;
+margin-top: 1rem;
+margin-bottom: 2rem;
+
+span{
+    background-color: $color-primary;
+    padding: 0 1rem;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+  }
+  &__buttons{
+      margin: 2rem;
+      display: flex;
+      gap: 4rem;
+  }
+}
+.about-section{
+   padding-bottom: 12rem;
+    
+    display: flex;
+    &__image{
+        width: 40%;
+
+    }
+    &__text{
+        margin-left: 4rem;
+        width: 60%;
+        &--heading{
+            font-size: 6.2rem;
+            color: $color-primary;
+            margin-bottom: 4rem;
+        }
+        &--paragraph{
+            font-size: 2.4rem;
+            color: $color-black;
+        }
+    }
+}
+.services-section{
+    background-color: $color-primary;
+    padding: 8rem 0;
+    
+}
+.services{
+    padding-top: 4rem;
+    display: flex;
+    gap: 8rem;
+    &__heading{
+        color: $color-black;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__service{
+        &--icon{
+            fill: $color-white;
+            width: 4.2rem;
+            height: 4.2rem;
+        }
+        &--title{
+            font-size: 3.2rem;
+            padding: 1rem 0;
+            font-weight: $font-weight-bold;
+
+        }
+        &--text{
+            font-size: 1.6rem;
+        }
+    }
+}
+.footer-section{
+    background-color: $color-black;
+}
+.footer{
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 2fr;
+    gap: 6rem;
+    align-items: flex-start;
+    &__social-media{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        &--logo{
+         width: 12rem;   
+        }
+        &--icons{
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        &--icons-icon{
+            width: 2.8rem;
+            height: 2.8rem;
+            fill: $color-primary;
+            transition: all .3s;
+            &:hover{
+                fill: $color-primary-tint-1
+            }
+        }
+    }
+    &__other-links{
+        &--heading{
+            font-size: 2.6rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+        }
+        &--links{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
+        }
+        &--link{
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 2.0rem;
+            transition: all .3s;
+
+            &:hover{
+                fill: $color-primary-tint-1
+            }
+            
+        }
+    }
+    &__team{
+        &--heading{
+            font-size: 2.6rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+        }
+        &--list{
+            list-style-type: none;
+            color: $color-primary;
+            font-size: 2.0rem;
+            margin-left: 2rem;
+        }
+    }
+    &__policy{
+        &--heading{
+            font-size: 2.6rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+        }
+        &--text{
+            color: $color-primary;
+            font-size: 2.0rem;
+            margin-left: 2rem;
+        }
+    }
+    &__copy{
+        font-size: 1.6rem;
+        font-weight: $font-weight-thin;
+        color: $color-white;
+        text-align: center;
+        padding: 1rem 0;
+        border-top: .2rem solid $color-primary-tint-1;
+    }
+}

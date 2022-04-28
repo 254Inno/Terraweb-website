@@ -1,0 +1,156 @@
+                .main {
+                    width: 100%;
+                    height: calc(100vh - 8rem);
+                    background-color: $color-white;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 6rem 1fr 3rem;
+                    &__top-bar {
+                        grid-column: 1/-1;
+                        grid-row: 1/2;
+                        background-color: $color-primary;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 2rem;
+                        font-size: 1.8rem;
+                        border-bottom: 2px solid $color-white;
+                        &--balance {
+                            .top-bar-balance {
+                                color: $color-white;
+                            }
+                        }
+                        &--user {
+                            margin-left: auto;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            .user-name {
+                                color: $color-white;
+                            }
+                            .user-image {
+                                height: 5.2rem;
+                                width: 5.2rem;
+                                border-radius: 50%;
+                                border: .2rem solid $color-black;
+                            }
+                        }
+                    }
+                    &__side-bar {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                        background-color: $color-primary;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        list-style-type: none;
+                        &--item {
+                            font-size: 1.6rem;
+                            font-weight: $font-weight-bold;
+                            display: flex;
+                            align-items: center;
+                            background-color: $color-primary;
+                            padding-left: 2rem;
+                            height: 100%;
+                            transition: all .3s;
+                            &:not(:last-child) {
+                                border-bottom: 2px solid $color-white;
+                            }
+                            &:hover {
+                                background-color: $color-white;
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                    &__body {
+                        grid-column: 2/4;
+                        grid-row: 2/3;
+                        // background-color: rebeccapurple;
+                        padding: 0 2rem;
+                        &--days {
+                            list-style: none;
+                            font-size: 1.8rem;
+                            font-weight: $font-weight-bold;
+                            border-bottom: 2px solid $color-primary;
+                            display: flex;
+                            justify-content: space-between;
+                            .day {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 2px;
+                                height: 4rem;
+                                width: 100%;
+                                &:not(:last-child) {
+                                    border-right: 2px solid $color-primary;
+                                }
+                                // &:not(:last-child):after {
+                                //     content: " ";
+                                //     width: 2px;
+                                //     height: 20px;
+                                //     background-color: $color-primary;
+                                //     margin-left: auto;
+                                //     margin-right: 1.5rem;
+                                // }
+                                &:hover {
+                                    background-color: $color-primary;
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                        &--day-weight {
+                            font-size: 3.2rem;
+                            color: $color-primary;
+                            text-align: center;
+                            font-weight: $font-weight-bold;
+                            margin-top: 10rem;
+                        }
+                        &--day-text {
+                            font-size: 2.4rem;
+                            font-weight: $font-weight-medium;
+                            color: $color-black;
+                            text-align: center;
+                            margin-top: 2rem;
+                        }
+                        &--total-balance {
+                            font-size: 3.2rem;
+                            color: $color-black;
+                            text-align: center;
+                            font-weight: $font-weight-bold;
+                            margin-top: 2rem;
+                        }
+                        &--message {
+                            margin-top: 11rem;
+                            font-size: 1.8rem;
+                            font-weight: $font-weight-thin;
+                            color: $color-primary;
+                            text-align: center;
+                        }
+                    }
+                    &__ads {
+                        grid-column: 4/5;
+                        grid-row: 2/3;
+                        background-color: $color-black;
+                        margin: 2rem;
+                        margin-left: 0;
+                        text-align: center;
+                        padding: 1rem;
+                        font-size: 2.4rem;
+                        color: $color-white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &__footer {
+                        grid-column: 1/-1;
+                        border-top: 2px solid $color-white;
+                        background-color: $color-black;
+                        color: $color-white;
+                        text-align: center;
+                        font-weight: 100;
+                        font-size: 1.4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }

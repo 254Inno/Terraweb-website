@@ -1,0 +1,44 @@
+.login{
+    background-image: url('../IMG/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    &__box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        backdrop-filter: blur(5px);
+    }
+    &__header{
+        background-color: $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        &--image{
+            height: 6rem;
+        }
+    }
+    &__main{
+        background-color: $color-white;
+        padding: 2rem 4rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    &__input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $color-primary-tint-1;
+        font-family: $font-primary;
+        padding-top: 2rem;
+    }
+    
+}
+
